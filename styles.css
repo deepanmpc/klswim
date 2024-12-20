@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Georgia', serif;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    background-color: #ea0707; /* Deep Red */
+    padding: 1.5rem 3.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+
+.logo img {
+    width: 300px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Add hover effect to the logo */
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: 'Georgia', serif;
+
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #100707;
+    transition: color 0.3s ease;
+    font-size: x-large;
+}
+
+.nav-links a:hover {
+    color: #080101; /* Light Pink */
+    transform: scale(1.4);
+    font-family: 'Georgia', serif;
+
+
+}
+.nav-links1:hover{
+    transform: scale(1.2);
+
+}
+.nav-links2:hover{
+    transform: scale(1.2);
+
+}
+.nav-links3:hover{
+    transform: scale(1.2);
+
+}
+
+/* Hero Section */
+.hero {
+    height: 89vh;
+    background: linear-gradient(to bottom right, #e0e0f1, #078fea); /* Gradient */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #ff0303;
+    color: #1f080c;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px; /* Rounded Button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b89f0;
+    color: #e3d9db;
+    transform: scale(1.4);
+
+}
+
+/* Booking Section */
+.booking {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking .booking-container {
+    width: 500px;
+    height: 500px; /* Square container */
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.7), /* Red Glow */
+                0 0 20px 5px rgba(0, 0, 255, 0.7), /* Blue Glow */
+                0 0 20px 5px rgba(0, 255, 0, 0.7); /* Green Glow */
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #960018;
+}
+
+input {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 50px; /* Rounded button */
+}
+
+/* Scroll Animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
